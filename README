@@ -1,0 +1,46 @@
+Overview
+	trainControl is a program that implement a simple POSIX Threads train
+	time control.
+
+Compiling
+	Do you need the build-essential, pthreads and SDL libs packages instaled
+	in your system to compile this program. In a debian-based linux you can
+	install by the simple execution of this command:
+	
+	sudo apt-get install build-essential
+	
+	If you obtain this software in a tarball gunzip archive, just do:
+	
+	tar -xzf train-control0.1-0.tar.gz
+	
+	To compile this software, goto main directory and do:
+	
+	make
+	
+Basics
+	To run this program, execute this command in the main directory:
+	
+	./bin/trainControl
+	
+	Follow the screen instruction.
+
+Support
+	Please feel free to clone/fork the project and improve it!
+	Also mail me at <jimmy.stelzer@gmail.com>
+	
+Author
+	Developed and maintained by Jimmy Pinto Stelzer <jimmy.stelzer@gmail.com>
+
+License
+	trainControl is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+	
+	PPD-Calendar is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+ 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ 	GNU General Public License for more details.
+	
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>.
