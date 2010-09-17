@@ -1,0 +1,26 @@
+Dados:	
+
+------Velocidade------
+Velocidade Fixa dos trems = 1 quadrado/minuto
+isso é, a cada minuto ele anda 1 quadrado.
+Podemos dizer que cada quadrado tem distância de 1Km
+logo nosso trêm anda a 60Km/h
+
+
+------Tempo de embarque/desembarque------
+5 minutos
+é o tempo que o trem leva para estacionar, abrir as portas e fechar as portas e sair
+em cada estação.
+no mapa de indentificações podemos ver os pontos vermelhos onde ficam os terminais.
+o tempo de percorrer aquele quadrado mais o tempo de embarque e desembarque
+é de 5 minutos.
+
+------Tipos de rotas------
+* ponto a ponto
+(vai da primeira estação, passando por todas as outras,
+até a última e depois volta, passando por todas, as outras 
+até a primeira.)
+* circular
+(vai da primeira estação, passando por todas as outras,
+até a última e depois passa direto pra primeira estação, recomeçando
+o processo.)
