@@ -1,26 +1,68 @@
 Dados:	
 
-------Velocidade------
-Velocidade Fixa dos trems = 1 quadrado/minuto
-isso é, a cada minuto ele anda 1 quadrado.
-Podemos dizer que cada quadrado tem distância de 1Km
-logo nosso trêm anda a 60Km/h
+------mapa-----
+60 caracteres de largura por 12 de altura
+
+---->IDA<-----
+
+dezena: 0         1         2         3         4         5         6
+unidade:0123456789012345678901234567890123456789012345678901234567890
+        |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+01-       __L1______X:          _________________):
+02-     :(:        ::\________X:                :)________
+03-     :(__L2___ __X:       :::                :):       \
+04-     :(:          \________X:                /          \
+05-       \                    \             ::/            \::
+06-       L3                    \_):::(_L6____X:            :X:
+07-         \_____________________):::(      :::            /::
+08-          :(:         _________)::::\L7                 /
+09-          ::\__L4____X               \__X:          :::/
+10-          :(:       :::                ::\_____X_____)/
+11-            \__L5____X__________________X______):   :X:
+12-                                              :(_L8_/
+
+para o desenho:
+
+:::
+::: = estaÃ§Ã£o ou terminal
+:::
+
+( = SAIDA/CHEGADA DO TREM
+
+) = CHEGADA/SAIDA DO TREM
+
+X = PARADA EM ESTAÃ‡ÃƒP
+
+* = trem
+
+no mapa acima estÃ¡ desenhado o caminho(/|\_) e o destino (X)
+
+---->IDA<-----
+
+dezena: 0         1         2         3         4         5         6
+unidade:0123456789012345678901234567890123456789012345678901234567890
+        |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+01-       _________:::          ________________:::
+02-     :::        E03_______:::                E09_______
+03-     E01______ _:::       E05                :::       \
+04-     :::          \_______:::                /          \
+05-       \                    \             :::            :::
+06-        \                    \_:::::______E08            E12
+07-         \_____________________:E06:      :::            :::
+08-          :::         _________:::::\                   /
+09-          E02_______:::              \_:::          :::/
+10-          :::       E04                E07____:::___E11
+11-            \_______:::________________:::____E10   :::
+12-                                              :::___/
 
 
-------Tempo de embarque/desembarque------
-5 minutos
-é o tempo que o trem leva para estacionar, abrir as portas e fechar as portas e sair
-em cada estação.
-no mapa de indentificações podemos ver os pontos vermelhos onde ficam os terminais.
-o tempo de percorrer aquele quadrado mais o tempo de embarque e desembarque
-é de 5 minutos.
+------Turno------
+a cada turno os trens fazem um movimento, exeto quando estÃ£o no periode de embarque/desembarque
+
+------Tempo------
+1 segundo muda para o proximo turno
+quando estaciona o trem leva 5 segundos para sair
+
 
 ------Tipos de rotas------
 * ponto a ponto
-(vai da primeira estação, passando por todas as outras,
-até a última e depois volta, passando por todas, as outras 
-até a primeira.)
-* circular
-(vai da primeira estação, passando por todas as outras,
-até a última e depois passa direto pra primeira estação, recomeçando
-o processo.)
