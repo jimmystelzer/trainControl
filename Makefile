@@ -13,7 +13,7 @@ LDLIBS=
 CFLAGS= -I$(IDIR) -Wall -O2
 
 # Header files
-_DEPS = main.h 
+_DEPS = main.h conio_linux.h 
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
 # Object of CPP files
