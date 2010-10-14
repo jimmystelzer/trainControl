@@ -9,11 +9,11 @@ BDIR=./bin
 CC=gcc
 
 # Flags
-LDLIBS=
+LDLIBS= -lpthread -lrt -lcurses
 CFLAGS= -I$(IDIR) -Wall -O2
 
 # Header files
-_DEPS = main.h conio_linux.h 
+_DEPS =  
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
 # Object of CPP files

@@ -3,11 +3,11 @@ Overview
 	time control.
 
 Compiling
-	Do you need the build-essential, pthreads and SDL libs packages instaled
-	in your system to compile this program. In a debian-based linux you can
-	install by the simple execution of this command:
+	Do you need the build-essential, pthreads and ncurses libs packages 
+	instaled in your system to compile this program. In a debian-based 
+	linux you can install by the simple execution of this command:
 	
-	sudo apt-get install build-essential
+	sudo apt-get install build-essential libncurses5-dev libpthread-stubs0-dev
 	
 	If you obtain this software in a tarball gunzip archive, just do:
 	
@@ -30,6 +30,7 @@ Support
 	
 Author
 	Developed and maintained by Jimmy Pinto Stelzer <jimmy.stelzer@gmail.com>
+	Developed by Bruno Goulart De Oliveira <bruno.goulart@acad.pucrs.br>
 
 License
 	trainControl is free software: you can redistribute it and/or modify
